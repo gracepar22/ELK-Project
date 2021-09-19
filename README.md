@@ -68,7 +68,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
         enabled: yes
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -86,7 +86,7 @@ Load balancing ensures that the application will be highly available, in additio
 ⦁	It defends an organization aganist distributed denial-of-service(DDoS) attacks. It offers a health probe function to regualryl check all the machines behind the load balancer.
 
 What is the advantage of a jump box?_
-⦁	It's a secure VM 
+⦁	It's a secure computer only allows speficic ports to come in and out
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the jump box and system network.
 - _TODO: What does Filebeat watch for? It monitors log files or locations that you sepecify, collects log events and forwards them either to Elasticsearch or Logstash for indexing.
