@@ -10,10 +10,10 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 #  - _TODO: Enter the playbook file._
 # name: Configure Elk VM with Docker
-  hosts: elk
-  remote_user: gracep
-  become: true
-  tasks:
+#  hosts: elk
+#  remote_user: gracep
+#  become: true
+#  tasks:
     # Use apt module
     - name: Install docker.io
       apt:
