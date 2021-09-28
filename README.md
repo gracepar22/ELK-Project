@@ -9,8 +9,8 @@ Update the path with the name of your diagram](Images/diagram_filename.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
-### Enter the playbook file
-#install_elk.yml
+#### Enter the playbook file ####
+# install_elk.yml
 - name: Configure Elk VM with Docker
   hosts: elk
   remote_user: gracep
@@ -24,24 +24,24 @@ These files have been tested and used to generate a live ELK deployment on Azure
         name: docker.io
         state: present
 
-      # Use apt module
+     # Use apt module
     - name: Install python3-pip
       apt:
         force_apt_get: yes
         name: python3-pip
         state: present
 
-      # Use pip module (It will default to pip3)
+     # Use pip module (It will default to pip3)
     - name: Install Docker module
       pip:
         name: docker
         state: present
 
-      # Use command module
+    # Use command module
     - name: Increase virtual memory
       command: sysctl -w vm.max_map_count=262144
 
-      # Use sysctl module
+    # Use sysctl module
     - name: Use more VM memory
       sysctl:
         name: vm.max_map_count
@@ -49,7 +49,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
         state: present
         reload: yes
 
-      # Use docker_container module
+    # Use docker_container module
     - name: download and launch a docker elk container
       docker_container:
         name: elk
@@ -62,7 +62,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
           -  9200:9200
           -  5044:5044
 
-      # Use systemd module
+    # Use systemd module
     - name: Enable service docker on boot
       systemd:
         name: docker
