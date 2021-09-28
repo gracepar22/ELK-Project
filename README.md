@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
 ### TODO: Enter the playbook file
-# install_elk.yml
+#install_elk.yml
 - name: Configure Elk VM with Docker
   hosts: elk
   remote_user: gracep
@@ -71,8 +71,8 @@ This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
+- Beats in Use
+- Machines Being Monitored
 - How to Use the Ansible Build
 
 
@@ -187,5 +187,3 @@ _TODO: Answer the following questions to fill in the blanks:_
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
 ⦁	http://20.98.162.30:5601/app/kibana#/home
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
