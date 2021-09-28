@@ -10,7 +10,7 @@ Update the path with the name of your diagram](Images/diagram_filename.png)
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
 #### Enter the playbook file ####
-# install_elk.yml
+"# install_elk.yml
 - name: Configure Elk VM with Docker
   hosts: elk
   remote_user: gracep
@@ -67,6 +67,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
       systemd:
         name: docker
         enabled: yes
+        "
 
 This document contains the following details:
 - Description of the Topology
